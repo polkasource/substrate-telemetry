@@ -18,11 +18,7 @@ export class Connection {
 
   private static readonly utf8decoder = new TextDecoder('utf-8');
 
-  private static readonly address = window.location.protocol === 'https:'
-                                      ? `wss://${window.location.hostname}/feed/`
-                                      : `ws://127.0.0.1:8000/feed`;
-
-  // private static readonly address = 'wss://telemetry.polkadot.io/feed/';
+  private static readonly address = 'ws://151.236.35.18:8000/feed/';
 
   private static async socket(): Promise<WebSocket> {
     let socket = await Connection.trySocket();
