@@ -376,9 +376,11 @@ export namespace Column {
 const SEMVER_PATTERN = /^\d+\.\d+\.\d+/;
 const BANDWIDTH_SCALE = 1024 * 1024;
 const MEMORY_SCALE = 2 * 1024 * 1024;
-const URI_BASE = window.location.protocol === 'https:'
-                                    ? `/network_state/`
-                                    : `http://${window.location.hostname}:8000/network_state/`;
+//const URI_BASE = window.location.protocol === 'https:'
+//                                   ? `/network_state/`
+//                                    : `http://${window.location.hostname}:8000/network_state/`;
+const URI_BASE = 'https://telemetry.polkasource.io/network_state/`;
+
 
 function formatStamp(stamp: Types.Timestamp): string {
   const passed = (timestamp() - stamp) / 1000 | 0;
