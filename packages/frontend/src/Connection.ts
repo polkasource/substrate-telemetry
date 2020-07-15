@@ -17,8 +17,8 @@ export class Connection {
   }
 
   private static readonly utf8decoder = new TextDecoder('utf-8');
-  // private static readonly address = 'wss://telemetry.polkasource.io/feed/';
-  private static readonly address = 'ws://151.236.35.18:8000/feed/';
+  private static readonly address = 'wss://telemetry-31.polkascan.io/feed/';
+  //private static readonly address = 'ws://151.236.35.18:8000/feed/';
 
   private static async socket(): Promise<WebSocket> {
     let socket = await Connection.trySocket();
