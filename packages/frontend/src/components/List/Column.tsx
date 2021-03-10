@@ -376,7 +376,7 @@ export namespace Column {
 const SEMVER_PATTERN = /^\d+\.\d+\.\d+/;
 const BANDWIDTH_SCALE = 1024 * 1024;
 const MEMORY_SCALE = 2 * 1024 * 1024;
-const URI_BASE = 'https://telemetry-31.polkascan.io/network_state/';
+const URI_BASE = 'https://telemetry-32.polkascan.io/network_state/';
 
 function formatStamp(stamp: Types.Timestamp): string {
   const passed = (timestamp() - stamp) / 1000 | 0;
